@@ -53,9 +53,12 @@ const About = () => {
                           border border-purple-500/20 text-purple-300">
               Get to know me
             </span>
-            <h2 className="mt-6 text-4xl md:text-5xl lg:text-6xl font-bold font-display">
-              About <span className="gradient-text">Me</span>
+            <h2 className="mt-6 text-4xl md:text-5xl lg:text-6xl font-bold font-display text-white">
+              <span className="text-white font-extrabold">About</span> <span className="gradient-text">Me</span>
             </h2>
+            <div className="mt-4 text-xl md:text-2xl font-semibold text-white">
+              I'm a <span className="gradient-text">Web Developer</span>, Freelancer, Student, and Creative Thinker
+            </div>
           </motion.div>
 
           {/* Main Content Grid */}
@@ -140,9 +143,10 @@ const About = () => {
 
             {/* Right - Text Content */}
             <motion.div variants={itemVariants} className="space-y-6">
-              <h3 className="text-2xl md:text-3xl font-bold">
-                Passionate about crafting{' '}
-                <span className="gradient-text">digital experiences</span>
+              <h3 className="text-2xl md:text-3xl font-bold text-white">
+                <span className="text-white">Hi, I am</span> Vedant
+                <br />
+                <span className="gradient-text">Passionate about crafting digital experiences</span>
               </h3>
               
               <p className="text-gray-400 text-lg leading-relaxed">
@@ -152,7 +156,7 @@ const About = () => {
               </p>
               
               <p className="text-gray-400 text-lg leading-relaxed">
-                Currently pursuing Diploma in Computer Engineering at Vidyalankar Polytechnic, 
+                Currently pursuing Diploma in Information Technology at Vidyalankar Polytechnic, 
                 I combine academic knowledge with practical experience to deliver exceptional results. 
                 I believe in writing clean, efficient code and creating user-centric designs.
               </p>

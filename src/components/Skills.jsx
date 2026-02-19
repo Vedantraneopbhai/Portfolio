@@ -46,7 +46,7 @@ const Skills = () => {
         { name: 'Figma', icon: FaFigma, color: '#F24E1E', level: 80 },
         { name: 'C++', icon: SiCplusplus, color: '#00599C', level: 75 },
         { name: 'Vite', icon: SiVite, color: '#646CFF', level: 80 },
-         { name: 'C', icon: SiC, color: '#101bf2', level: 90 },
+         
       ],
     },
   ]
@@ -89,8 +89,8 @@ const Skills = () => {
                           border border-cyan-500/20 text-cyan-300">
               My Expertise
             </span>
-            <h2 className="mt-6 text-4xl md:text-5xl lg:text-6xl font-bold font-display">
-              Skills & <span className="gradient-text">Technologies</span>
+            <h2 className="mt-6 text-4xl md:text-5xl lg:text-6xl font-bold font-display text-white">
+              <span className="text-white font-extrabold">Skills</span> & <span className="gradient-text">Technologies</span>
             </h2>
             <p className="mt-4 text-gray-400 text-lg max-w-2xl mx-auto">
               I've worked with a variety of technologies in web development. 

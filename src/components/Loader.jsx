@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const Loader = () => (
-  <motion.div className="fixed inset-0 z-50 flex items-center justify-center bg-white"
+  <motion.div className="fixed inset-0 z-50 flex items-center justify-center bg-neutral-900"
     initial={{ opacity: 1 }}
     animate={{ opacity: 1 }}
     exit={{ opacity: 0 }}

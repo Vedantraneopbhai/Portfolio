@@ -294,7 +294,7 @@ html {
 
 body {
   font-family: 'Inter', system-ui, sans-serif;
-  background-color: #fff;
+  background: linear-gradient(180deg, #a78bfa, #22d3ee);
   color: #222;
   overflow-x: hidden;
 }
@@ -303,12 +303,14 @@ body {
 .glass {
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .glass-dark {
   background: rgba(13, 19, 33, 0.8);
   backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
