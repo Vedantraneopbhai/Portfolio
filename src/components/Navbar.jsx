@@ -44,11 +44,7 @@ const Navbar = () => {
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.5, delay: 0.2 }}
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          isScrolled 
-            ? 'glass-dark shadow-lg shadow-purple-500/5' 
-            : 'bg-transparent'
-        }`}
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-neutral-900/95 shadow-lg shadow-purple-500/10 border-b border-neutral-800`}
       >
         <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-20">
@@ -59,7 +55,7 @@ const Navbar = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              <span className="text-2xl font-bold font-display">
+              <span className="text-2xl font-bold font-display text-white">
                 Vedant
                 <span className="gradient-text">.</span>
               </span>
@@ -82,19 +78,12 @@ const Navbar = () => {
                   transition={{ duration: 0.3, delay: index * 0.1 }}
                   className={`relative px-4 py-2 text-sm font-medium transition-colors duration-300
                     ${activeSection === link.href.slice(1) 
-                      ? 'text-white' 
+                      ? 'text-white bg-gradient-to-r from-purple-700/40 to-pink-700/40 rounded-lg border border-purple-500/40' 
                       : 'text-gray-400 hover:text-white'
                     }`}
                 >
                   {link.name}
-                  {activeSection === link.href.slice(1) && (
-                    <motion.span
-                      layoutId="activeSection"
-                      className="absolute inset-0 bg-white/5 rounded-lg -z-10"
-                      initial={false}
-                      transition={{ type: "spring", stiffness: 350, damping: 30 }}
-                    />
-                  )}
+                  {/* Remove animated background for clarity, handled by class above */}
                 </motion.a>
               ))}
               

@@ -102,10 +102,9 @@ const Hero = () => {
             {/* Name & Title */}
             <motion.h1 
               variants={itemVariants}
-              className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold font-display mb-4"
+              className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold font-display mb-4 text-white"
             >
-              Hi, I'm{' '}
-              <span className="gradient-text">Vedant</span>
+              Hi, I am <span className="text-white font-extrabold">Vedant</span>
             </motion.h1>
 
             {/* Animated Role */}
